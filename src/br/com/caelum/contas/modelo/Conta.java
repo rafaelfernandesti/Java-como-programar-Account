@@ -1,15 +1,23 @@
 
-package Caelum;
-
+package br.com.caelum.contas.modelo;
+//https://www.caelum.com.br/apostila-java-orientacao-objetos/
+//modificadores-de-acesso-e-atributos-de-classe/#exerccios-encapsulamento-construtores-e-static
 
 public class Conta {
     
-    int numero;
-    double saldo;
-    double limite;
-    String nome;
-    String dataAbertura;
-    Cliente titular;
+    private int numero;
+    private double saldo;
+    private double limite;
+    private String nome;
+    private String dataAbertura;
+    private Cliente titular;
+    
+    public Conta(){
+        //construtor sem parâmetros
+    }
+    public Conta(Cliente titular){
+        //contrutor recebe o titular como parâmetro
+    }
     
     public String getDataAbertura() {
         return dataAbertura;
@@ -73,5 +81,10 @@ public class Conta {
     
     public double calculaRendimento(){
         return this.saldo*=1.01;
+    }
+    
+    public String recuperaDadosParaImpressao(){
+        return "";
+        //não implementado ainda
     }
 }

@@ -1,5 +1,5 @@
 
-package Caelum;
+package br.com.caelum.contas.main;
 
 
 public class Carro {
